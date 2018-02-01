@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - 27017:27017
+  mongoadmin:
+    container_name: mongoadmin
+    image: adicom/admin-mongo
+    ports:
+      - 1234:1234
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - 6379:6379
