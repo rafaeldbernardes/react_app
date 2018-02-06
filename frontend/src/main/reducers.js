@@ -12,7 +12,7 @@ const rootReducer = combineReducers({
       description: 'Reunião com a equipe as 10',
       done: false
     }, {
-      _id: 2,
+      _id: 3,
       description: 'Consultas médicas na terça depois do almoço',
       done: false
     }]
