@@ -28,7 +28,7 @@ class TodoForm extends Component {
   }
 
   render() {
-    const { add, search, description } = this.props
+    const { add, search, description, clear } = this.props
     return (
       <div role='form' className='todoForm'>
         <Grid cols='12 9 10'>
